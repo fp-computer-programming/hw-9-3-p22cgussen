@@ -1,14 +1,14 @@
-# Author: CCG 12/9/21
+# Author: CCG 1/18/22
 
 
 while True:
     try: 
         temp = float(input("Enter the temperature: "))
-        type = input("Do you want to convert to (f/C)?")
-        if type.upper() == "C":
+        scale = input("Do you want to convert to (f/C)?")
+        if scale.upper() == "C":
             result = (temp - 32) * 5 / 9
             print("{0} degrees farenheit is {1} degrees celcius.".format(temp, result))
-        elif type.upper() == "F":
+        elif scale.upper() == "F":
             result = temp / 5 * 9 + 32
             print("{0} degrees celcius is {1} degrees fahrenheit.".format(temp, result))
         else:
